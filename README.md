@@ -4,10 +4,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0001-two-sum) |
 | [0485-max-consecutive-ones](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0485-max-consecutive-ones) |
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0001-two-sum) |
 | [0076-minimum-window-substring](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0076-minimum-window-substring) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
 ## Two Pointers
