@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0001-two-sum) |
 | [0485-max-consecutive-ones](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0485-max-consecutive-ones) |
+| [0704-binary-search](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0704-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -26,4 +27,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0076-minimum-window-substring](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0076-minimum-window-substring) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
+## Binary Search
+|  |
+| ------- |
+| [0704-binary-search](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0704-binary-search) |
 <!---LeetCode Topics End-->
