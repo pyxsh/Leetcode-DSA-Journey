@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0001-two-sum) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0485-max-consecutive-ones](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0485-max-consecutive-ones) |
 | [0704-binary-search](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0704-binary-search) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3644-maximum-k-to-sort-a-permutation) |
@@ -41,4 +42,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
+## Sorting
+|  |
+| ------- |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 <!---LeetCode Topics End-->
