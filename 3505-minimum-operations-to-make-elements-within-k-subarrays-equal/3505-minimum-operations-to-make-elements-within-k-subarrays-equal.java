@@ -1,70 +1,104 @@
-import java.util.*;
-
 class Solution {
-    int m;
-    long[] bc, bs;
+    private long[] cnt, sum;
+    private int m;
 
-    void upd(int i, int c, long v) {
-        for (; i <= m; i += i & -i) { bc[i] += c; bs[i] += v; }
+    private void update(int p, int delta, int value) {
+        for (; p <= m; p += p & -p) {
+            cnt[p] += delta;
+            sum[p] += (long) delta * value;
+        }
+    }
+
+    private long[] query(int p) {
+        long c = 0, s = 0;
+        for (; p > 0; p -= p & -p) {
+            c += cnt[p];
+            s += sum[p];
+        }
+        return new long[]{c, s};
+    }
+
+    private int kth(int rank) {
+        int p = 0;
+        int step = Integer.highestOneBit(m);
+
+        for (; step > 0; step >>= 1) {
+            int np = p + step;
+            if (np <= m && cnt[np] < rank) {
+                rank -= (int) cnt[np];
+                p = np;
+            }
+        }
+        return p + 1;
     }
 
     public long minOperations(int[] nums, int x, int k) {
         int n = nums.length;
+        if ((long) x * k > n) return -1;
+
         int[] sorted = nums.clone();
         Arrays.sort(sorted);
-        int[] vals = new int[n + 1];
+
+        int[] vals = new int[n];
         m = 0;
-        for (int i = 0; i < n; i++)
-            if (i == 0 || sorted[i] != sorted[i - 1]) vals[++m] = sorted[i];
 
-        int[] rk = new int[n];
-        for (int i = 0; i < n; i++) rk[i] = Arrays.binarySearch(vals, 1, m + 1, nums[i]);
-
-        bc = new long[m + 1];
-        bs = new long[m + 1];
-        int[] cntAt = new int[m + 1];
-        int LOG = 32 - Integer.numberOfLeadingZeros(m);
-        int need = (x + 1) / 2;
-        long tot = 0;
-
-        for (int i = 0; i < x; i++) {
-            upd(rk[i], 1, nums[i]); cntAt[rk[i]]++; tot += nums[i];
+        for (int v : sorted) {
+            if (m == 0 || vals[m - 1] != v) {
+                vals[m++] = v;
+            }
         }
 
-        long[] cost = new long[n - x + 1];
-        for (int s = 0; s + x <= n; s++) {
-            int pos = 0, kk = need;
-            long accC = 0, accS = 0;
-            for (int b = LOG; b >= 0; b--) {
-                int np = pos + (1 << b);
-                if (np <= m && bc[np] < kk) {
-                    pos = np; kk -= bc[np]; accC += bc[np]; accS += bs[np];
-                }
-            }
-            int p = pos + 1;
-            long med = vals[p];
-            long cntLE = accC + cntAt[p];
-            long sumLE = accS + cntAt[p] * med;
-            cost[s] = med * cntLE - sumLE + (tot - sumLE) - med * (x - cntLE);
+        cnt = new long[m + 1];
+        sum = new long[m + 1];
 
-            upd(rk[s], -1, -nums[s]); cntAt[rk[s]]--; tot -= nums[s];
-            if (s + x < n) {
-                upd(rk[s + x], 1, nums[s + x]); cntAt[rk[s + x]]++; tot += nums[s + x];
+        long[] ops = new long[n];
+        long total = 0;
+
+        for (int i = 0; i < n; i++) {
+            int p = Arrays.binarySearch(vals, 0, m, nums[i]) + 1;
+            update(p, 1, nums[i]);
+            total += nums[i];
+
+            if (i >= x) {
+                int old = Arrays.binarySearch(
+                    vals, 0, m, nums[i - x]
+                ) + 1;
+
+                update(old, -1, nums[i - x]);
+                total -= nums[i - x];
+            }
+
+            if (i >= x - 1) {
+                int midPos = kth((x + 1) / 2);
+                long mid = vals[midPos - 1];
+
+                long[] left = query(midPos);
+                long lc = left[0], ls = left[1];
+                long rc = x - lc, rs = total - ls;
+
+                ops[i] = mid * lc - ls + rs - mid * rc;
             }
         }
 
         long INF = Long.MAX_VALUE / 4;
-        long[] prev = new long[n + 1];
+        long[] pre = new long[n + 1];
+        long[] cur = new long[n + 1];
+
         for (int j = 1; j <= k; j++) {
-            long[] cur = new long[n + 1];
             Arrays.fill(cur, INF);
-            for (int i = x; i <= n; i++) {
-                long best = cur[i - 1];
-                if (prev[i - x] < INF) best = Math.min(best, prev[i - x] + cost[i - x]);
-                cur[i] = best;
+
+            for (int i = j * x; i <= n; i++) {
+                cur[i] = Math.min(
+                    cur[i - 1],
+                    pre[i - x] + ops[i - 1]
+                );
             }
-            prev = cur;
+
+            long[] temp = pre;
+            pre = cur;
+            cur = temp;
         }
-        return prev[n];
+
+        return pre[n];
     }
 }
