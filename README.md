@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0485-max-consecutive-ones) |
 | [0704-binary-search](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0704-binary-search) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1385-find-the-distance-value-between-two-arrays) |
+| [1882-process-tasks-using-servers](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1882-process-tasks-using-servers) |
 | [2747-count-zero-request-servers](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2747-count-zero-request-servers) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3644-maximum-k-to-sort-a-permutation) |
@@ -68,5 +69,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [1882-process-tasks-using-servers](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1882-process-tasks-using-servers) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 <!---LeetCode Topics End-->
