@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0011-container-with-most-water) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0485-max-consecutive-ones](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0485-max-consecutive-ones) |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0011-container-with-most-water) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1385-find-the-distance-value-between-two-arrays) |
 ## String
@@ -90,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0011-container-with-most-water) |
 | [3789-minimum-cost-to-acquire-required-items](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3789-minimum-cost-to-acquire-required-items) |
 ## Stack
 |  |
