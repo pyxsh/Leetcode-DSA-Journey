@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0076-minimum-window-substring](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0076-minimum-window-substring) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2243-calculate-digit-sum-of-a-string) |
 ## Sliding Window
 |  |
 | ------- |
@@ -88,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1606-find-servers-that-handled-most-number-of-requests) |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2243-calculate-digit-sum-of-a-string) |
 ## Ordered Set
 |  |
 | ------- |
