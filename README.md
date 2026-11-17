@@ -35,12 +35,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0011-container-with-most-water) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1385-find-the-distance-value-between-two-arrays) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 ## String
 |  |
 | ------- |
 | [0076-minimum-window-substring](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0076-minimum-window-substring) |
 | [0567-permutation-in-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/0567-permutation-in-string) |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2243-calculate-digit-sum-of-a-string) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 ## Sliding Window
 |  |
 | ------- |
@@ -77,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/pyxsh/Leetcode-DSA-Journey/tree/master/3693-climbing-stairs-ii) |
 ## Heap (Priority Queue)
