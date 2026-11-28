@@ -1,30 +1,33 @@
+import java.util.*;
+
 class Solution {
     public int maximumSaleItems(int[][] items, int budget) {
         int n = items.length;
         int[] cnt = new int[n + 1];
         for (int[] it : items) cnt[it[0]]++;
         int[] mult = new int[n + 1];
-        for (int f = 1; f <= n; f++) {
-            for (int m = f; m <= n; m += f) mult[f] += cnt[m];
+        for (int f = 1; f <= n; f++)
+            for (int k = f; k <= n; k += f) mult[f] += cnt[k];
+
+        long[] keys = new long[n];
+        long minPrice = Long.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            long price = items[i][1];
+            minPrice = Math.min(minPrice, price);
+            keys[i] = (price << 17) | (mult[items[i][0]] - 1);
         }
-        int minP = Integer.MAX_VALUE;
-        List<int[]> cand = new ArrayList<>();
-        for (int[] it : items) {
-            int f = it[0], p = it[1];
-            minP = Math.min(minP, p);
-            int g = mult[f] - 1;
-            if (g > 0) cand.add(new int[]{p, g});
+        Arrays.sort(keys);
+
+        long rem = budget, taken = 0;
+        long mask = (1L << 17) - 1;
+        for (long key : keys) {
+            long price = key >> 17, gifts = key & mask;
+            if (price >= 2 * minPrice) break;
+            long t = Math.min(gifts, rem / price);
+            taken += t;
+            rem -= t * price;
+            if (t < gifts) break;
         }
-        cand.sort((a, b) -> Integer.compare(a[0], b[0]));
-        long spent = 0, total = 0, B = budget;
-        for (int[] c : cand) {
-            int p = c[0], g = c[1];
-            if (p > 2L * minP) break;
-            long can = Math.min((long)g, (B - spent) / p);
-            total += can * 2;
-            spent += can * p;
-        }
-        total += (B - spent) / minP;
-        return (int)total;
+        return (int) (2 * taken + rem / minPrice);
     }
 }
